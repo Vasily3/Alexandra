@@ -1,0 +1,32 @@
+.weddings__list {
+  @include reset-list;
+}
+
+@media (min-width: $desktop-width) {
+  .weddings__wrapper {
+    display: flex;
+    align-items: center;
+
+    height: 100vh;
+
+    overflow: auto;
+  }
+
+  .weddings__list {
+    display: flex;
+    align-items: center;
+
+    padding-left: 15vw;
+  }
+
+  .weddings__item {
+    margin: 0;
+    margin-right: 20px;
+  }
+
+  .weddings__photo {
+    display: block;
+    max-width: 84vw;
+    max-height: 84vh;
+  }
+}

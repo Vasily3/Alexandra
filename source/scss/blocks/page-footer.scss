@@ -1,0 +1,17 @@
+.page-footer__social {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    position: fixed;
+    bottom: 25px;
+
+    max-width: 15vw;
+    margin: 0;
+  }
+
+  .page-footer__social {
+    margin-bottom: 15px;
+  }
+}

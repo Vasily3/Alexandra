@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Фотограф Александра Хлебникова в Санкт-Петербурге</title>
+  <meta name="description"
+        content="Фотограф в Санкт-Петербурге Александра Хлебникова. Свадебные и портретные фотосессии, предметная фотография, съемка еды и интерьеров.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="sprite" style="display: none">
+  <include src="build/img/sprite.svg"></include>
+</div>
+
+<header class="page-header">
+  <div class="page-header__wrapper">
+    <h1 class="visually-hidden">Фотограф Александра Хлебникова</h1>
+    <a class="page-header__logo" href="index.html">
+      <p class="page-header__logo-name">Александра Хлебникова</p>
+      <p class="page-header__logo-prof">Фотограф</p>
+    </a>
+  </div>
+
+  <nav class="main-nav main-nav--nojs main-nav--closed">
+    <button class="main-nav__button" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <ul class="main-nav__list">
+      <li class="main-nav__item"><a href="weddings.html">Свадьбы</a></li>
+      <li class="main-nav__item"><a href="series.html">Серии</a></li>
+      <li class="main-nav__item"><a href="portrets.html">Портреты</a></li>
+      <li class="main-nav__item"><a href="food.html">Food фото</a></li>
+      <li class="main-nav__item"><a href="interiors.html">Интерьеры</a></li>
+      <li class="main-nav__item"><a href="about.html">Обо мне</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main class="page-main">
+  <div class="page-main__wrapper">
+    <picture>
+      <source class="page-main__desktop-webp" type="image/webp" media="(min-width: 960px)" srcset="">
+      <source class="page-main__tablet-webp" type="image/webp" media="(min-width: 660px)" srcset="">
+      <source class="page-main__mobile-webp" type="image/webp" srcset="">
+      <source class="page-main__desktop-jpg" media="(min-width: 960px)" srcset="">
+      <source class="page-main__tablet-jpg" media="(min-width: 660px)" srcset="">
+      <img class="page-main__main-photo" src="" srcset="" alt="Заставка" width="100%" height="auto"></picture>
+  </div>
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social-item">
+          <a class="social-link social-link--vk" href="https://vk.com/alexandra_photos" target="_blank" rel="nofollow">
+            <span class="visually-hidden">Александра Хлебникова Вконтакте</span>
+            <svg width="28" height="28">
+              <use xlink:href="#icon-vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link social-link--instagram" href="https://www.instagram.com/your.alexandra" target="_blank"
+            rel="nofollow">
+            <span class="visually-hidden">Александра Хлебникова в Инстаграме</span>
+            <svg width="27" height="27">
+              <use xlink:href="#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link social-link--tel" href="tel:+79313100950" target="_blank" rel="nofollow">
+            <span class="visually-hidden">Позвонить Александре Хлебниковой</span>
+            <svg width="19" height="19" viewBox="0 0 19 19">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+            <span class="social-link-tel-block"><p>+7-931-310-09-50</p></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <p class="page-footer__copyright copyright">© Александра Хлебникова Санкт&nbsp-&nbspПетербург</p>
+  </div>
+</footer>
+
+<script src="js/index-script.min.js"></script>
+<script src="js/menu-nav.min.js"></script>
+</body>
+</html>

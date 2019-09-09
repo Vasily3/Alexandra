@@ -1,0 +1,23 @@
+/*PTSerif Regular*/
+@font-face {
+  font-family: "PTSerif-Regular";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local("PT Serif"),
+    local("PTSerif-Regular"),
+    url("../../fonts/PTSerif-regular.woff2") format("woff2"),
+    url("../../fonts/PTSerif-regular.woff") format("woff");
+}
+
+/*PTSerif Bold*/
+@font-face {
+  font-family: "PTSerif-Bold";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: local("PT Serif"),
+    local("PTSerif-Bold"),
+    url("../../fonts/PTSerif-bold.woff2") format("woff2"),
+    url("../../fonts/PTSerif-bold.woff") format("woff");
+}

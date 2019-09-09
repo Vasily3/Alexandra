@@ -1,0 +1,14 @@
+@media (min-width: $desktop-width) {
+  .series-seria {
+    padding-top: 30px;
+  }
+
+  .series-seria__wrapper {
+    max-width: 800px;
+    margin-left: 15vw;
+
+    img {
+      margin-bottom: 20px;
+    }
+  }
+}

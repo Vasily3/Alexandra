@@ -1,0 +1,169 @@
+@keyframes calling {
+  from {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(-40deg);
+  }
+
+  20% {
+    transform: rotate(0deg);
+  }
+
+  30% {
+    transform: rotate(30deg);
+  }
+
+  40% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-40deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  70% {
+    transform: rotate(30deg);
+  }
+
+  80% {
+    transform: rotate(0deg);
+  }
+
+  90% {
+    transform: rotate(-40deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.social__list {
+  @include reset-list;
+
+  position: relative;
+
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+
+  line-height: 0;
+}
+
+.social-link {
+  display: block;
+  width: 26px;
+  height: 26px;
+
+  color: $color-black;
+
+  &--vk svg {
+    margin-top: 1px;
+  }
+
+  &--instagram svg {
+    margin-top: 2px;
+  }
+
+  &--tel svg {
+    margin: 2px;
+    margin-top: 5px;
+  }
+}
+
+.social-link-tel-block {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    width: 130px;
+  }
+
+  .social-link-tel-block {
+    position: absolute;
+    top: -38px;
+    right: 0;
+    left: 0;
+
+    display: inline-block;
+    max-width: 15vw;
+    height: 33px;
+    opacity: 0;
+
+    visibility: hidden;
+    transform: translateY(30px);
+    background-color: $color-black;
+    border-radius: 50px;
+
+    p {
+      padding-bottom: 27px;
+
+      font-size: 15px;
+      line-height: 0;
+      text-align: center;
+      color: $color-white;
+    }
+  }
+
+  .social-link {
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+
+    border-radius: 50%;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      background-color: $color-black;
+      color: $color-gray;
+
+      .social-link-tel-block {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        transition-duration: 0.5s;
+      }
+
+      svg {
+        animation: calling 0.5s;
+      }
+    }
+
+    &--vk svg {
+      margin-top: 5px;
+      margin-left: 4px;
+
+      transition-duration: 0.5s;
+    }
+
+    &--instagram svg {
+      margin-top: 5px;
+      margin-left: 5px;
+
+      transition-duration: 0.5s;
+    }
+
+    &--tel svg {
+      margin-top: 8px;
+      margin-left: 8px;
+
+      transition-duration: 0.5s;
+    }
+  }
+}
+
+@media (min-width: $desktop-width-lg) {
+  .social__list {
+    width: auto;
+  }
+}
