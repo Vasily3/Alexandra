@@ -121,6 +121,29 @@
 
     border-radius: 50%;
     outline: none;
+    transition-duration: 0.5s;
+
+    &--vk svg {
+      margin-top: 5px;
+      margin-left: 4px;
+    }
+
+    &--instagram svg {
+      margin-top: 5px;
+      margin-left: 5px;
+    }
+
+    &--tel {
+      svg {
+        margin-top: 8px;
+        margin-left: 8px;
+      }
+
+      &:hover svg,
+      &:focus svg {
+        animation: calling 0.5s;
+      }
+    }
 
     &:hover,
     &:focus {
@@ -133,31 +156,6 @@
         transform: translateY(0);
         transition-duration: 0.5s;
       }
-
-      svg {
-        animation: calling 0.5s;
-      }
-    }
-
-    &--vk svg {
-      margin-top: 5px;
-      margin-left: 4px;
-
-      transition-duration: 0.5s;
-    }
-
-    &--instagram svg {
-      margin-top: 5px;
-      margin-left: 5px;
-
-      transition-duration: 0.5s;
-    }
-
-    &--tel svg {
-      margin-top: 8px;
-      margin-left: 8px;
-
-      transition-duration: 0.5s;
     }
   }
 }
