@@ -73,9 +73,9 @@ gulp.task("images", function () {
 });
 
 gulp.task("webp", function () {
-  return gulp.src(["source/img/interiors/*.{png,jpg}"])
+  return gulp.src(["source/img/weddings/*.{png,jpg}"])
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img/interiors"));
+    .pipe(gulp.dest("source/img/weddings"));
 });
 
 gulp.task("sprite", function () {

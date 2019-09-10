@@ -2,6 +2,11 @@
   @include reset-list;
 }
 
+.portrets__item {
+  margin-bottom: 20px;
+
+  outline: 0;
+}
 
 @media (min-width: $desktop-width) {
   .portrets {
@@ -21,10 +26,6 @@
   .portrets__item {
     margin-right: 30px;
     margin-bottom: 30px;
-
-    img {
-      outline: 0;
-    }
 
     &:hover,
     &:focus-within {

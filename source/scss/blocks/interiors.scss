@@ -2,6 +2,14 @@
   @include reset-list;
 }
 
+.interiors__item {
+  margin-bottom: 20px;
+
+  img {
+    outline: 0;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .interiors {
     padding-top: 30px;
@@ -20,10 +28,6 @@
   .interiors__item {
     margin-right: 30px;
     margin-bottom: 30px;
-
-    img {
-      outline: 0;
-    }
 
     &:hover,
     &:focus-within {
